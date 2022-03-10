@@ -1,6 +1,5 @@
 import time
-
-# decorator to calculate time to run a function
+# Create a decorator named calculate_time, decorator is a function that takes another function as its argument and returns another function.
 def calculate_time(func):
     def wrapper():
         time_start = time.time()    

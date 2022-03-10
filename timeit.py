@@ -9,8 +9,8 @@ def calculate_time(func):
         start = time.time()
         temp = func()       # calling actual fsunction inside wrapper function
         end = time.time()
-        x = end - start
-        output = ("Total Time " + str(x))
+        run_time = end - start
+        output = ("Total Time " + str(run_time) + "seconds")
         print(output)
         return temp
     return wrapper

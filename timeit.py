@@ -3,10 +3,10 @@ import time
 # decorator to calculate time to run a function
 def calculate_time(func):
     def wrapper():
-        time_start = time.time()    #time right before function starts
+        start = time.time()    #time right before function starts
         temp = func()
-        time_end = time.time()      #time right after function ends
-        timeToRun = time_end - time_start
+        end = time.time()      #time right after function ends
+        timeToRun = end - start
         x = ("Total time " + str(timeToRun))
         print(x)
         return temp

@@ -20,8 +20,10 @@ def document_analyzer():
     for w in sorted(d, key = lambda key: (-d[key],key)):   
         list.append(w)
         #print(w,d[w])
+    print()
     for i in range (5):
-        print(list[i], ": ", d[list[i]]  )
+        
+       print(list[i], ": ", d[list[i]]  )
        #  print(":"  )
        # print(d[list[i]] )
 

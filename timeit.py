@@ -7,8 +7,8 @@ def calculate_time(func):
         temp = func()
         time_end = time.time()      #time right after function ends
         timeToRun = time_end - time_start
-        string = ("Total time " + str(timeToRun))
-        print(string)
+        x = ("Total time " + str(timeToRun))
+        print(x)
         return temp
     return wrapper
 

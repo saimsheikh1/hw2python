@@ -4,16 +4,18 @@ def document_analyzer():
     #Lines = fileName.readLines()
     #word = fileName.read()
     
-    file = open('document.txt', 'r', encoding = 'utf-8')
-    text = file.read()
-
+ #   file = open('document.txt', 'r', encoding = 'utf-8')
+  #  text = file.read()
+    
    
     d =  { }
     with open('document.txt','r', encoding = 'utf-8') as file:
         for line in file:
             print(line)
             for word in line.split():
-                    d[word]= d.get(word,0)+1
+                 if word.isalnum():     
+                     d[word]= d.get(word,0)+1
+               
     list = []
     for w in sorted(d, key = d.get, reverse = True):   
         list.append(w)

@@ -1,4 +1,3 @@
-
 def document_analyzer():
     #fileName = open('document.txt', 'r')
     #Lines = fileName.readLines()
@@ -13,6 +12,7 @@ def document_analyzer():
         for line in file:
             print(line)
             for word in line.split():
+                 word = word.lower()
                  if word.isalnum():     
                      d[word]= d.get(word,0)+1
                
@@ -30,9 +30,6 @@ def document_analyzer():
       
     #d= dict(sorted(d.items(), key =lambda t: t[1]))
     #print(d)
-   
 document_analyzer()
-
-
 
  

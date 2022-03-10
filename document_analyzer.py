@@ -12,7 +12,7 @@ def document_analyzer():
         for line in file:       # for every line in file
                         #print lines
             for word in line.split():       # line.split seperates by white space the words
-                 word=word.lower()          # word.lower() only counting lowercase, so we turned all uppercase to lower case
+             #    word=word.lower()          # word.lower() only counting lowercase, so we turned all uppercase to lower case
                  if word.isalnum():         
                      d[word]= d.get(word,0)+1
                
@@ -23,7 +23,7 @@ def document_analyzer():
     print("\r")
     for i in range (5):
         
-       print(list[i], ": ", d[list[i]]  )
+       print(list[i], ":", d[list[i]]  )
        #  print(":"  )
        # print(d[list[i]] )
 

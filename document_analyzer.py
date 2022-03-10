@@ -16,14 +16,14 @@ def document_analyzer():
                  if word.isalnum():         
                      d[word]= d.get(word,0)+1
                
-    list = []
+    list =[]
     for w in sorted(d, key = lambda key: (-d[key],key)):   
         list.append(w)
         #print(w,d[w])
     print("\r")
     for i in range (5):
         
-       print(list[i], ":", d[list[i]]  )
+       print(list[i],": ", d[list[i]]  )        #sample output: a :1
        #  print(":"  )
        # print(d[list[i]] )
 

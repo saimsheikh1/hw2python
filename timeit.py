@@ -7,11 +7,12 @@ import time
 def calculate_time(func):
     def wrapper():
         start = time.time()
-        func()       # calling actual fsunction inside wrapper function
+        temp = func()       # calling actual fsunction inside wrapper function
         end = time.time()
-        X = end - start
-        output = ("Total Time " + str(X))
+        x = end - start
+        output = ("Total Time " + str(x))
         print(output)
+        return temp
     return wrapper
 
 @calculate_time
@@ -20,4 +21,3 @@ def t1():
     while i > 0:
         i -= 1
 t1()
-

@@ -1,8 +1,9 @@
 def doubler(func):
     def wrapper():
-        temp = func()
-        return temp * temp
+        func()
+        func()
     return wrapper
+
 @doubler
 def test():
     print("Hi")

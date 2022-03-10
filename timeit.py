@@ -6,7 +6,7 @@ def calculate_time(func):
         start = time.time()    #time right before function starts
         temp = func()
         end = time.time()      #time right after function ends
-        test_timer = end - start
+        run_time = end - start
         x = ("Total time " + str(timeToRun))
         print(x)
         return temp

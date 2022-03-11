@@ -23,7 +23,7 @@ def document_analyzer():
     print("\r")
     for i in range (5):
         
-       print(list[i]+": ", d[list[i]]  )        #sample output: a :1
+       print(list[i]+":", d[list[i]]  )        #sample output: a :1
        #  print(":"  )
        # print(d[list[i]] )
 
